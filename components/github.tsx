@@ -17,7 +17,7 @@ export const Github = () => {
         <div className="my-10">
             <motion.h1 
                 ref={titleRef}
-                className={`text-xl font-bold ${GeistMono.className} mb-4 sm:mb-8 flex items-center gap-2 flex-wrap`}
+                className={`text-2xl font-bold ${GeistMono.className} mb-4 sm:mb-8 flex items-center gap-2 flex-wrap`}
                 initial={{ opacity: 0, x: -20 }}
                 animate={titleInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }}
                 transition={{ duration: 0.5 }}
