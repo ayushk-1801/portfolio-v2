@@ -28,7 +28,7 @@ export const Hero = () => {
                         undergrad at IIIT Delhi with a passion for building useful and
                         scalable products. I&apos;m also a <span className="underline text-gray-100">Smart India Hackathon</span> &apos;24 finalist. I have a strong foundation in modern tech. <br />
                         <br />
-                        I&apos;m currently exploring web3 and am open to work and freelance opportunities.
+                        I&apos;m currently exploring <span className="underline text-gray-100">web3</span> and am open to work and freelance opportunities.
                     </motion.p>
                     <motion.div 
                         initial={{ opacity: 0, y: 20 }}

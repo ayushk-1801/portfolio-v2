@@ -72,44 +72,92 @@ const ProjectCard = ({ project, index }: { project: ProjectType; index: number }
                 <div className="flex flex-col md:flex-row gap-6">
                     {project.videoLink ? (
                         <motion.div
-                            className="w-full md:w-2/5"
-                            whileHover={{
-                                scale: 1.03,
-                                rotateY: 5,
-                                boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.3)"
-                            }}
+                            className="w-full md:w-2/5 flex flex-col gap-4"
                             transition={{
                                 type: "spring",
                                 stiffness: 400,
                                 damping: 20
                             }}
                         >
-                            <div className="relative aspect-video overflow-hidden rounded-md">
+                            <div className="relative w-full aspect-video overflow-hidden rounded-md">
                                 <video
                                     src={project.videoLink}
                                     title={`${project.name} video`}
                                     className="absolute w-full h-full object-cover"
                                     controls
                                 >
-                                    <track kind="captions" src="" label="English" />
+                                    <track kind="captions" />
                                 </video>
                             </div>
+                            
+                            {/* Links - moved below video */}
+                            <motion.div
+                                className="flex gap-4"
+                                initial={{ opacity: 0, y: 10 }}
+                                animate={isInView ? {
+                                    opacity: 1,
+                                    y: 0,
+                                    transition: {
+                                        delay: delay + 0.3,
+                                        duration: 0.5
+                                    }
+                                } : {}}
+                            >
+                                {project.liveLink && (
+                                    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: delay + 0.4 }} className="flex-1">
+                                        <Button
+                                            asChild
+                                            variant="outline"
+                                            effect="shineHover"
+                                            size="sm"
+                                            icon={IoLink}
+                                            iconPlacement="left"
+                                            className="w-full justify-center"
+                                        >
+                                            <Link
+                                                href={project.liveLink}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                            >
+                                                Live Demo
+                                            </Link>
+                                        </Button>
+                                    </motion.div>
+                                )}
+
+                                {project.githubLink && (
+                                    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: delay + 0.5 }} className="flex-1">
+                                        <Button
+                                            asChild
+                                            variant="outline"
+                                            effect="shineHover"
+                                            size="sm"
+                                            icon={FaGithub}
+                                            iconPlacement="left"
+                                            className="w-full justify-center"
+                                        >
+                                            <Link
+                                                href={project.githubLink}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                            >
+                                                GitHub
+                                            </Link>
+                                        </Button>
+                                    </motion.div>
+                                )}
+                            </motion.div>
                         </motion.div>
                     ) : project.imageLink && (
                         <motion.div
-                            className="w-full md:w-2/5"
-                            whileHover={{
-                                scale: 1.03,
-                                rotateY: 5,
-                                boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.3)"
-                            }}
+                            className="w-full md:w-2/5 flex flex-col gap-4"
                             transition={{
                                 type: "spring",
                                 stiffness: 400,
                                 damping: 20
                             }}
                         >
-                            <div className="relative aspect-video overflow-hidden rounded-md">
+                            <div className="relative w-full aspect-video overflow-hidden rounded-md">
                                 <Image
                                     src={project.imageLink}
                                     alt={project.name}
@@ -117,13 +165,71 @@ const ProjectCard = ({ project, index }: { project: ProjectType; index: number }
                                     className="object-cover bg-white"
                                 />
                             </div>
+                            
+                            {/* Links - moved below image */}
+                            <motion.div
+                                className="flex gap-4"
+                                initial={{ opacity: 0, y: 10 }}
+                                animate={isInView ? {
+                                    opacity: 1,
+                                    y: 0,
+                                    transition: {
+                                        delay: delay + 0.3,
+                                        duration: 0.5
+                                    }
+                                } : {}}
+                            >
+                                {project.liveLink && (
+                                    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: delay + 0.4 }} className="flex-1">
+                                        <Button
+                                            asChild
+                                            variant="outline"
+                                            effect="shineHover"
+                                            size="sm"
+                                            icon={IoLink}
+                                            iconPlacement="left"
+                                            className="w-full justify-center"
+                                        >
+                                            <Link
+                                                href={project.liveLink}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                            >
+                                                Live Demo
+                                            </Link>
+                                        </Button>
+                                    </motion.div>
+                                )}
+
+                                {project.githubLink && (
+                                    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: delay + 0.5 }} className="flex-1">
+                                        <Button
+                                            asChild
+                                            variant="outline"
+                                            effect="shineHover"
+                                            size="sm"
+                                            icon={FaGithub}
+                                            iconPlacement="left"
+                                            className="w-full justify-center"
+                                        >
+                                            <Link
+                                                href={project.githubLink}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                            >
+                                                GitHub
+                                            </Link>
+                                        </Button>
+                                    </motion.div>
+                                )}
+                            </motion.div>
                         </motion.div>
                     )}
 
                     <div className="w-full md:w-3/5 space-y-4">
                         {/* Project description */}
                         <motion.p
-                            className="text-gray-700 dark:text-gray-300 text-wrap"
+                            className="text-gray-500 dark:text-gray-300 text-wrap"
                             initial={{ opacity: 0, y: 10 }}
                             animate={isInView ? {
                                 opacity: 1,
@@ -163,62 +269,6 @@ const ProjectCard = ({ project, index }: { project: ProjectType; index: number }
                                     </Badge>
                                 ))}
                             </div>
-                        </motion.div>
-
-                        {/* Links */}
-                        <motion.div
-                            className="flex gap-4 pt-2"
-                            initial={{ opacity: 0, y: 10 }}
-                            animate={isInView ? {
-                                opacity: 1,
-                                y: 0,
-                                transition: {
-                                    delay: delay + 0.3,
-                                    duration: 0.5
-                                }
-                            } : {}}
-                        >
-                            {project.liveLink && (
-                                <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: delay + 0.4 }}>
-                                    <Button
-                                        asChild
-                                        variant="outline"
-                                        effect="shineHover"
-                                        size="sm"
-                                        icon={IoLink}
-                                        iconPlacement="left"
-                                    >
-                                        <Link
-                                            href={project.liveLink}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                        >
-                                            Live Demo
-                                        </Link>
-                                    </Button>
-                                </motion.div>
-                            )}
-
-                            {project.githubLink && (
-                                <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: delay + 0.5 }}>
-                                    <Button
-                                        asChild
-                                        variant="outline"
-                                        effect="shineHover"
-                                        size="sm"
-                                        icon={FaGithub}
-                                        iconPlacement="left"
-                                    >
-                                        <Link
-                                            href={project.githubLink}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                        >
-                                            GitHub
-                                        </Link>
-                                    </Button>
-                                </motion.div>
-                            )}
                         </motion.div>
                     </div>
                 </div>
