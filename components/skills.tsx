@@ -71,7 +71,7 @@ export const Skills = () => {
         <div className="w-full mb-10">
             <motion.h1 
                 ref={titleRef}
-                className={`text-xl font-bold ${GeistMono.className} mb-4`}
+                className={`text-2xl font-bold ${GeistMono.className} mb-4`}
                 initial={{ opacity: 0, x: -20 }}
                 animate={titleInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }}
                 transition={{ duration: 0.5 }}
