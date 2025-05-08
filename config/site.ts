@@ -1,10 +1,10 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-  name: "Ayush",
-  description: "I'm a software engineer with a passion for building scalable and efficient systems.",
+  name: "Ayush Kumar Anand",
+  description: "I'm a 19y/o full stack web developer and a CSAI undergrad at IIIT Delhi with a passion for building useful and scalable products. I'm also a Smart India Hackathon '24 finalist. I have a strong foundation in modern tech. I'm currently exploring web3 and am open to work and freelance opportunities.",
   links: {
-    caldotcom: "https://cal.com/ayush-kumar-anand/30min",
+    caldotcom: "https://cal.com/ayush-kumar-anand/",
     github: "https://github.com/ayushk-1801",
     twitter: "https://x.com/ayushk1801",
     linkedin: "https://linkedin.com/in/ayush-kumar-anand",
@@ -91,7 +91,7 @@ export const siteConfig = {
         { name: "supabase", src: "https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/supabase/supabase-original.svg" },
         { name: "razorpay", src: "/razorpay.svg" },
       ],
-      imageLink: "/audient.png",
+      imageLink: "/audient.jpeg",
       liveLink: "https://audient.in/",
     },
     {
