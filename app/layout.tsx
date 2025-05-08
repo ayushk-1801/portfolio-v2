@@ -7,6 +7,7 @@ import { Providers } from "./providers";
 import { siteConfig } from "@/config/site";
 import { GeistSans } from "geist/font";
 import { Navbar } from "@/components/navbar";
+import { Footer } from "@/components/footer";
 export const metadata: Metadata = {
   title: {
     default: siteConfig.name,
@@ -31,19 +32,20 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html suppressHydrationWarning lang="en">
+    <html suppressHydrationWarning lang="en" className="min-h-screen">
       <head />
       <body
         className={clsx(
-          "min-h-screen bg-background font-sans antialiased",
+          "bg-background antialiased min-h-screen",
           GeistSans.className,
         )}
       >
         <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
-          <div className="relative flex flex-col h-screen">
-            <main className="container mx-auto max-w-3xl pt-10 px-6 flex-grow space-y-32">
+          <div className="relative flex flex-col min-h-screen">
+            <main className="container mx-auto max-w-3xl pt-10 px-6 flex-grow space-y-20">
               <Navbar />
               {children}
+              <Footer />
             </main>
           </div>
         </Providers>
