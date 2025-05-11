@@ -89,11 +89,28 @@ const config = {
 					'4': 'hsl(var(--chart-4))',
 					'5': 'hsl(var(--chart-5))'
 				}
-			}
+			},
+			typography: {
+				DEFAULT: {
+					css: {
+						maxWidth: '100%',
+						img: {
+							marginTop: '1.5em',
+							marginBottom: '1.5em',
+						},
+						'code::before': {
+							content: '""',
+						},
+						'code::after': {
+							content: '""',
+						},
+					},
+				},
+			},
 		}
 	},
 	darkMode: ["class", 'class'],
-	plugins: [heroui(), require("tailwindcss-animate")],
+	plugins: [heroui(), require("tailwindcss-animate"), require('@tailwindcss/typography')],
 }
 
 module.exports = config;

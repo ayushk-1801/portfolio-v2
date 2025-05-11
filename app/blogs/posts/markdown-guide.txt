@@ -1,0 +1,86 @@
+---
+title: 'Markdown Guide for Blog Posts'
+description: 'Learn how to format your blog posts using Markdown'
+date: '2023-12-15'
+tags: ['markdown', 'guide', 'tutorial']
+coverImage: '/blog-images/markdown-guide.jpg'
+---
+
+# Markdown Guide for Blog Posts
+
+This guide will help you learn how to format your blog posts using Markdown syntax.
+
+## Basic Text Formatting
+
+Markdown makes it easy to format your text. Here are some basic examples:
+
+- **Bold text** is created with `**double asterisks**`
+- *Italic text* is created with `*single asterisks*`
+- ***Bold and italic*** is created with `***three asterisks***`
+
+## Headings
+
+You can create headings using the hash symbol:
+
+```
+# Heading 1
+## Heading 2
+### Heading 3
+#### Heading 4
+```
+
+## Lists
+
+### Unordered Lists
+
+- Item 1
+- Item 2
+  - Nested item
+  - Another nested item
+- Item 3
+
+### Ordered Lists
+
+1. First item
+2. Second item
+3. Third item
+
+## Code
+
+You can include inline code with backticks: `const greeting = "Hello World";`
+
+Or code blocks with triple backticks and language name:
+
+```javascript
+function greet(name) {
+  return `Hello, ${name}!`;
+}
+
+console.log(greet("Reader"));
+```
+
+## Links and Images
+
+### Links
+
+[Visit my website](https://example.com)
+
+### Images
+
+![Markdown Logo](/blog-images/markdown-guide.jpg)
+
+## Blockquotes
+
+> This is a blockquote.
+> It can span multiple lines.
+
+## Tables
+
+| Header 1 | Header 2 | Header 3 |
+|----------|----------|----------|
+| Cell 1   | Cell 2   | Cell 3   |
+| Cell 4   | Cell 5   | Cell 6   |
+
+## Conclusion
+
+Using Markdown makes it easy to create well-formatted blog posts without having to write HTML. It's simple to learn and provides a clean, distraction-free writing experience. 
