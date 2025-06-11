@@ -34,6 +34,7 @@ export const siteConfig = {
     { name: "docker", src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg" },
     { name: "supabase", src: "https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/supabase/supabase-original.svg" },
     { name: "redis", src: "https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/redis/redis-original.svg"},
+    { name: "solana", src: "/solana.svg" },
     { name: "electron", src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/electron/electron-original.svg" },
     { name: "python", src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" },
     { name: "c", src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" },
@@ -75,7 +76,7 @@ export const siteConfig = {
       ],
       liveLink: "https://benkyoshi.vercel.app/",
       githubLink: "https://github.com/ayushk-1801/gdg-hackathon",
-      videoLink: "/benkyoshi.mp4",
+      videoLink: "https://player.cloudinary.com/embed/?cloud_name=dm1k9evtg&public_id=nqp3xpfhbezbuykbkeni&profile=cld-default",
     },
     {
       name: "Audient",
@@ -108,7 +109,7 @@ export const siteConfig = {
       ],
       liveLink: "https://cvision.vercel.app/",
       githubLink: "https://github.com/ayushk-1801/cvision",
-      videoLink: "/cvision.mp4",
+      videoLink: "https://player.cloudinary.com/embed/?cloud_name=dm1k9evtg&public_id=xbxtny3h620qubh74iom&profile=cld-default",
     },
     {
       name: "RE-DACT",

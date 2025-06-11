@@ -6,6 +6,8 @@ import { Experience } from "@/components/experience";
 export default function Home() {
   return (
     <div>
+      
+
       <Hero />
       <Skills />
       <Experience />

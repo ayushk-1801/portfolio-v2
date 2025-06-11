@@ -3,7 +3,6 @@
 import Link from "next/link";
 import Image from "next/image";
 import { siteConfig } from "@/config/site";
-import { GithubIcon } from "@/components/icons";
 import { ReactNode, useRef } from "react";
 import { FaGithub } from "react-icons/fa6";
 import { IoLink } from "react-icons/io5";
@@ -80,14 +79,26 @@ const ProjectCard = ({ project, index }: { project: ProjectType; index: number }
                             }}
                         >
                             <div className="relative w-full aspect-video overflow-hidden rounded-md">
-                                <video
-                                    src={project.videoLink}
-                                    title={`${project.name} video`}
-                                    className="absolute w-full h-full object-cover"
-                                    controls
-                                >
-                                    <track kind="captions" />
-                                </video>
+                                {project.videoLink.includes('cloudinary.com/embed') ? (
+                                    <iframe
+                                        src={project.videoLink}
+                                        title={`${project.name} video`}
+                                        className="absolute w-full h-full"
+                                        allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
+                                        allowFullScreen
+                                    />
+                                ) : (
+                                    <video
+                                        src={project.videoLink}
+                                        title={`${project.name} video`}
+                                        className="absolute w-full h-full object-cover"
+                                        controls
+                                        preload="metadata"
+                                    >
+                                        <track kind="captions" />
+                                        Your browser does not support the video tag.
+                                    </video>
+                                )}
                             </div>
                             
                             {/* Links - moved below video */}
