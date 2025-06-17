@@ -62,6 +62,24 @@ export const siteConfig = {
   ],
   projects: [
     {
+      name: "e3.chat",
+      description: "Benkyoshi transforms YouTube playlists into structured, distraction-free learning experiences with AI-enhanced features. It offers automated course creation, intelligent notes and quizzes, progress tracking, and personalized learning.",
+      date: "June 2025",
+      techStack: [
+        { name: "nextjs", src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/nextjs/nextjs-original.svg" },
+        { name: "typescript", src: "https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/typescript/typescript-original.svg" },
+        { name: "tailwindcss", src: "https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/tailwindcss/tailwindcss-original.svg" },
+        { name: "drizzle", src: "/drizzle.svg" },
+        { name: "vercel ai-sdk", src: "https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/vercel/vercel-original.svg" },
+        { name: "gemini", src: "/gemini.svg" },
+        { name: "groq", src: "/groq.svg" },
+        { name: "ollama", src: "/ollama.svg" },
+      ],
+      liveLink: "https://e3-chat.vercel.app/",
+      githubLink: "https://github.com/ayushk-1801/e3-chat",
+      videoLink: "https://player.cloudinary.com/embed/?cloud_name=dm1k9evtg&public_id=rxhtmmj5estge4crz7ln&profile=cld-default",
+    },
+    {
       name: "Benkyoshi",
       description: "Benkyoshi transforms YouTube playlists into structured, distraction-free learning experiences with AI-enhanced features. It offers automated course creation, intelligent notes and quizzes, progress tracking, and personalized learning.",
       date: "April 2025",
