@@ -98,7 +98,7 @@ export const siteConfig = {
     },
     {
       name: "Audient",
-      description: "It is a platform that lets users discover and book exclusive tickets for live comedy, music, and poetry events. It offers a seamless and secure booking experience, access to unique performances, and a curated selection of top-tier entertainment for unforgettable moments.",
+      description: "Audient is a platform that lets users discover and book exclusive tickets for live comedy, music, and poetry events. It offers a seamless and secure booking experience, access to unique performances, and a curated selection of top-tier entertainment for unforgettable moments.",
       date: "March 2025",
       techStack: [
         { name: "nextjs", src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/nextjs/nextjs-original.svg" },
