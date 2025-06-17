@@ -63,7 +63,7 @@ export const siteConfig = {
   projects: [
     {
       name: "e3.chat",
-      description: "Benkyoshi transforms YouTube playlists into structured, distraction-free learning experiences with AI-enhanced features. It offers automated course creation, intelligent notes and quizzes, progress tracking, and personalized learning.",
+      description: "An open source alternative to t3.chat and ChatGPT. Features multi-provider AI chat with Google Gemini, Groq, and Ollama support, offering 25+ models including local inference capabilities and real-time web search grounding.",
       date: "June 2025",
       techStack: [
         { name: "nextjs", src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/nextjs/nextjs-original.svg" },
