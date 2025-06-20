@@ -6,7 +6,7 @@ export const siteConfig = {
   links: {
     caldotcom: "https://cal.com/ayush-kumar-anand/",
     github: "https://github.com/ayushk-1801",
-    twitter: "https://x.com/ayushk1801",
+    twitter: "https://x.com/ayushktwt",
     linkedin: "https://linkedin.com/in/ayush-kumar-anand",
     email: "ayushkumar.swe@gmail.com",
     resume: "/resume.pdf"
