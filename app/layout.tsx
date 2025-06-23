@@ -65,7 +65,7 @@ export const metadata: Metadata = {
     description: siteConfig.description,
     images: [
       {
-        url: "/profile.svg",
+        url: "/opengraph-image.png",
         width: 1200,
         height: 630,
         alt: `${siteConfig.name} - Full Stack Developer Portfolio`,
@@ -77,7 +77,7 @@ export const metadata: Metadata = {
     title: siteConfig.name,
     description: siteConfig.description,
     creator: "@ayushktwt",
-    images: ["/profile.svg"],
+    images: ["/twitter-image.png"],
   },
   robots: {
     index: true,
