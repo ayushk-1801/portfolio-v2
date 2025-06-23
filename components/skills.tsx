@@ -2,7 +2,6 @@
 import { GeistMono } from "geist/font";
 import Image from "next/image";
 import { siteConfig } from "@/config/site";
-import { cn } from "@/lib/utils";
 import { Marquee } from "@/components/magicui/marquee";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";

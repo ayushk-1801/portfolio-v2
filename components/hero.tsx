@@ -26,13 +26,13 @@ export const Hero = () => {
           >
             I&apos;m a 19y/o full stack web developer and a CSAI undergrad at
             IIIT Delhi & I build cool stuff. I&apos;m also a{" "}
-            <span className="underline text-gray-100">
+            <span className="underline text-yellow-400">
               Smart India Hackathon
             </span>{" "}
-            &apos;24 finalist. I have a strong foundation in modern tech. <br />
+            &apos;24 finalist. I love learning new tech. <br />
             <br />
             I&apos;m currently building on{" "}
-            <span className="underline text-gray-100">solana</span> and am open
+            <span className="underline text-yellow-400">solana</span> and am open
             to work and freelance opportunities.
           </motion.p>
           <motion.div

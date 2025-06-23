@@ -5,8 +5,6 @@ import Link from 'next/link';
 import { BlogPost } from '@/lib/blog';
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
-import { Button } from '@/components/ui/button';
-import { IoArrowForward } from 'react-icons/io5';
 
 interface BlogPostCardProps {
   post: BlogPost;
