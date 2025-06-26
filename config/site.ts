@@ -29,7 +29,7 @@ export const siteConfig = {
     { name: "mongodb", src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg" },
     { name: "postgresql", src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg" },
     { name: "drizzle", src: "/drizzle.svg" },
-    { name: "prisma", src: "https://raw.githubusercontent.com/prisma/presskit/main/Assets/Prisma-DarkSymbol.svg" },
+    { name: "prisma", src: "https://cdn.creazilla.com/icons/3256965/file-type-prisma-icon-size_512.png" },
     { name: "better-auth", src: "/better-auth.svg" },
     { name: "docker", src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg" },
     { name: "supabase", src: "https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/supabase/supabase-original.svg" },
